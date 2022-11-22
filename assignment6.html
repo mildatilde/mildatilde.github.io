@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+</head>
+<body>
+<H1 id="title"> HI WELCOME TO MY HOUSE!</H1>
+<form>
+<p>WHATS YOUR FAVORITE WORD!!</p>
+<input type="text" id="fav" name="fav" onchange="leave()"> 
+<br>
+<p>WHATS YOUR LEAST FAVORITE WORD!</p>
+<input type="text" id="hate" name="hate" onchange="wowie()">
+<br>
+<p>I HAVE COMBINED THEM! VERY COOL.</p>
+<input type="text" id="both" name="both">
+<br>
+<p>WHATS YOUR FAVORITE COLOR!</p>
+<input type="checkbox" id="1" name="1" value="RED" onchange="color()">
+<label for="1">RED</label><br>
+<input type="checkbox" id="2" name="2" value="YELLOW" onchange="notreal()">
+<label for="2">YELLOW</label><br>
+<input type="checkbox" id="3" name="3" value="GREEN" onchange="color()">
+<label for="3">GREEN</label><br>
+<input type="checkbox" id="4" name="4" value="BLUE" onchange="color()">
+<label for="4">BLUE</label><br>
+<input type="checkbox" id="5" name="5" value="PURPLE" onchange="color()">
+<label for="5">PURPLE</label><br>
+<input type="reset" value="CLEAR">
+</form>
+<script>
+function leave(){ 
+document.getElementById("title").innerHTML= "YOU CANNOT LEAVE (I HAVE TRIED)";
+}
+function wowie(){
+var day= document.getElementById("fav").value
+var essay= document.getElementById("hate").value
+document.getElementById("both").value= day+essay;
+}
+function color(){
+alert("WOW ME TOO!");
+}
+function notreal(){
+alert("you are not real");
+}
+</script>
+</body>
+</html>
