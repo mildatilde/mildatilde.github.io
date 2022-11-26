@@ -1,0 +1,69 @@
+﻿<html>
+<head>
+</head>
+<body>
+<form>
+<H1>Calculator</H1>
+<input type="text" id="fnum" name="fnum">
+<input type="button" onclick="abb()" id="add" name="add" value="+" >
+<input type="button" id="sub" name="sub" value="-" onclick="subb()">
+<input type="button" id="mult" name="mult" value="*" onclick="multt()">
+<input type="button" id="div" name="div" value="/" onclick="divv()">
+<input type="text" id="lnum" name="lnum">
+=
+<input type="text" id="output" name="output">
+<H1>SUMMATION</H1>
+start
+<input type="text" id="fsum" name="fsum">
+<br>
+end   
+<input type="text" id="lsum" name="lsum">
+<br>
+<input type="button" id="submit" name="submit" value="calculate" onclick="thingg()">
+<input type="reset" id="reset" name="reset">
+<h2 id="death">Test Text</h2>
+</form>
+<script>
+
+
+function abb(){
+var num1 = parseFloat(document.getElementById("fnum").value);
+var num2 = parseFloat(document.getElementById("lnum").value);
+document.getElementById("output").value=num1+num2
+;};
+
+
+function subb(){
+var num1 = parseFloat(document.getElementById("fnum").value);
+var num2 = parseFloat(document.getElementById("lnum").value);
+document.getElementById("output").value=num1-num2;
+;};
+
+
+
+
+function multt(){
+var num1 = parseFloat(document.getElementById("fnum").value);
+var num2 = parseFloat(document.getElementById("lnum").value);
+document.getElementById("output").value=num1*num2
+;};
+
+
+function divv(){
+var num1 = parseFloat(document.getElementById("fnum").value);
+var num2 = parseFloat(document.getElementById("lnum").value);
+document.getElementById("output").value=num1/num2
+;};
+
+
+function thingg(){
+var num1 = parseFloat(document.getElementById("fsum").value);
+var num2 = parseFloat(document.getElementById("lsum").value);
+document.getElementById("death").innerHTML=(num2-num1+1)*(num1+num2)/2;
+alert((num2-num1+1)*(num1+num2)/2)
+;};
+
+
+</script>
+</body>
+</html>
